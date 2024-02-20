@@ -282,6 +282,7 @@ input:checked + .slider:before {
 
 #textBody {
     max-width: 100%;
+    min-width: 60%;
     position: absolute;
     font-family: 'Clearwater';
     font-size: 2.5vh;
@@ -293,6 +294,9 @@ input:checked + .slider:before {
     padding-bottom: 20%;
     padding-left: 20%;
     user-select: none;
+}
+#textBody span::before {
+    content: '?';
 }
 
 .interactionReminder {
@@ -324,7 +328,7 @@ input:checked + .slider:before {
     animation: automata_bounce 0.8s linear infinite;
     vertical-align: middle; 
     position: relative;
-    left: -1.5vh;
+    left: -0.5vh;
   }
 
   footer {
