@@ -279,3 +279,7 @@ input:checked + .slider:before {
     margin-bottom: 5vh;
     animation: replicant_bounce 1s ease-in-out infinite;
 }
+
+footer {
+    display: none;
+}
