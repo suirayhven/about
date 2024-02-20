@@ -115,6 +115,22 @@
       transform: translateY(-0.25em);
     }
   }
+  @keyframes fast_automata_bounce {
+    0% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(0.5em);
+    }
+    30%, 100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade_out {
+    to {
+        opacity: 0;
+    }
+  }
 
 body,
 html {
@@ -293,21 +309,22 @@ input:checked + .slider:before {
 }
 
 .replicantIcon {
+    content: url("./resources/automataIcon.png");
+    height: 150px;
     position: fixed;
     bottom: 0;
     right: 0;
     z-index: 10;
     margin-right: 5vh;
-    margin-bottom: 5vh;
-    animation: automata_bounce 1s ease-in-out infinite;
-    filter:invert(1);
-    display:none;
+    margin-bottom: 7vh;
+    animation: fast_automata_bounce 0.8s linear 3, fade_out 0.5s ease-out 2.4s forwards;
 }
 
 #textBody p svg {
     animation: automata_bounce 0.8s linear infinite;
     vertical-align: middle; 
     position: relative;
+    left: -1.5vh;
   }
 
   footer {
