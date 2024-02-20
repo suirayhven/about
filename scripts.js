@@ -74,6 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
     displayNextSentence();
 });
 
-document.getElementById('textBody').addEventListener('click', function() {
-    displayNextSentence();
+// Handle click events on the body element excluding the header
+document.body.addEventListener('click', function(event) {
+    const header = document.querySelector('.header');
+    if (!header.contains(event.target)) {
+        displayNextSentence();
+    }
 });
