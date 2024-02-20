@@ -126,7 +126,8 @@ body {
     background-color: black;
 }
 
-.automataLogo, .replicantLogo {
+.automataLogo,
+.replicantLogo {
     padding: 0px 10px;
 }
 
@@ -143,7 +144,7 @@ body {
     position: relative;
     display: inline-block;
     width: 46px;
-    margin:10px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
 }
 
 .switch input {
@@ -183,15 +184,15 @@ body {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #fbfbfb;
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #fbfbfb;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);

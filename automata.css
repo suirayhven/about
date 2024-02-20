@@ -106,31 +106,39 @@
 
 @keyframes automata_bounce {
     0% {
-      transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
     }
+
     20% {
-      transform: translateY(0.25em);
+        transform: translateY(0.25em);
     }
-    40%, 100% {
-      transform: translateY(-0.25em);
+
+    40%,
+    100% {
+        transform: translateY(-0.25em);
     }
-  }
-  @keyframes fast_automata_bounce {
+}
+
+@keyframes fast_automata_bounce {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     15% {
-      transform: translateY(0.5em);
+        transform: translateY(0.5em);
     }
-    30%, 100% {
-      transform: translateY(0);
+
+    30%,
+    100% {
+        transform: translateY(0);
     }
-  }
-  @keyframes fade_out {
+}
+
+@keyframes fade_out {
     to {
         opacity: 0;
     }
-  }
+}
 
 body,
 html {
@@ -165,26 +173,27 @@ body {
     background-color: #ffffff;
 }
 
-.automataLogo, .replicantLogo {
+.automataLogo,
+.replicantLogo {
     padding: 0px 10px;
 }
 
 .automataLogo {
     max-width: 100px;
-    filter:invert(1);
+    filter: invert(1);
 }
 
 .replicantLogo {
     display: inline-block;
     max-width: 100px;
-    filter:invert(1);
+    filter: invert(1);
 }
 
 .switch {
     position: relative;
     display: inline-block;
     width: 46px;
-    margin:10px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
 }
 
 .switch input {
@@ -224,15 +233,15 @@ body {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #fbfbfb;
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #fbfbfb;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
@@ -295,6 +304,7 @@ input:checked + .slider:before {
     padding-left: 20%;
     user-select: none;
 }
+
 #textBody span::before {
     content: '?';
 }
@@ -309,7 +319,7 @@ input:checked + .slider:before {
     left: 0;
     width: 100%;
     z-index: 9;
-    display:none;
+    display: none;
 }
 
 .replicantIcon {
@@ -326,18 +336,18 @@ input:checked + .slider:before {
 
 #textBody p svg {
     animation: automata_bounce 0.8s linear infinite;
-    vertical-align: middle; 
+    vertical-align: middle;
     position: relative;
     left: -0.5vh;
-  }
+}
 
-  footer {
+footer {
     position: fixed;
     font-family: 'Clearwater';
-    font-size:1.3vh;
+    font-size: 1.3vh;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     text-align: center;
-    color:#c7c7c7;
+    color: #c7c7c7;
 }

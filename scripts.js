@@ -58,24 +58,28 @@ function displayNextSentence() {
                 // Show the paragraph
                 paragraph.style.display = "block";
                 // Scroll to the newly displayed paragraph
-                paragraph.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+                paragraph.scrollIntoView({
+                    behavior: "smooth",
+                    block: "end",
+                    inline: "nearest"
+                });
                 // Store the paragraph and SVG element in arrays
                 previousParagraphs.push(paragraph);
                 previousSvgs.push(ellipsisSvg);
             }
-        }, 20); // Typing speed (adjust as needed)
+        }, 10); // Typing speed (adjust as needed)
 
         currentSentenceIndex++; // Move to the next sentence
     }
 }
 
 // Call the function to display the first sentence when the page loads
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     displayNextSentence();
 });
 
 // Handle click events on the body element excluding the header
-document.body.addEventListener('click', function(event) {
+document.body.addEventListener('click', function (event) {
     const header = document.querySelector('.header');
     if (!header.contains(event.target)) {
         displayNextSentence();
