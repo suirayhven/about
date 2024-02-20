@@ -154,6 +154,20 @@ body {
     color: #4b4947;
 }
 
+p#center-aligned {
+    text-align: center;
+}
+p#in-focus {
+    text-align: center;
+    padding-top: 15%;
+}
+p#left-aligned {
+    text-align: left;
+}
+p#right-aligned {
+    text-align: right;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -298,7 +312,7 @@ input:checked+.slider:before {
     color: #4b4947;
     font-stretch: expanded;
     min-height: 100%;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-right: 20%;
     padding-bottom: 20%;
     padding-left: 20%;
@@ -339,6 +353,10 @@ input:checked+.slider:before {
     vertical-align: middle;
     position: relative;
     left: -0.5vh;
+}
+
+#textBody p {
+    margin: 1vh 0vh;
 }
 
 footer {

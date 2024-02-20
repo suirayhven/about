@@ -107,6 +107,21 @@ body {
     color: #fbfbfb;
 }
 
+p#center-aligned {
+    text-align: center;
+}
+p#in-focus {
+    text-align: center;
+    padding-top: 15%;
+}
+p#left-aligned {
+    text-align: left;
+}
+p#right-aligned {
+    text-align: right;
+}
+
+
 .header {
     position: fixed;
     top: 0;
@@ -241,22 +256,28 @@ input:checked+.slider:before {
 }
 
 #textBody {
-    max-width: 100%;
-    position: absolute;
     font-family: 'IM FELL DW Pica', serif;
     font-size: 2.3vh;
     color: #fbfbfb;
-    min-height: 100%;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-right: 20%;
     padding-bottom: 20%;
     padding-left: 20%;
     user-select: none;
     line-height: 1.8;
+    max-width: 100%;
+    min-width: 60%;
+    position: absolute;
+    min-height: 100%;
+    user-select: none;
 }
 
 #textBody svg {
     display: none;
+}
+
+#textBody p {
+    margin: 1vh 0vh;
 }
 
 .interactionReminder {
