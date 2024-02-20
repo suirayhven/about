@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
     displayNextSentence();
 });
 
-// Handle click events on the document to display the next sentence
-document.addEventListener('click', function() {
+document.getElementById('textBody').addEventListener('click', function() {
     displayNextSentence();
 });
