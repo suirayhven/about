@@ -1,1 +1,1 @@
-View website on: https://suirayhven.github.io/index.html
+View website on: https://suirayhven.github.io/home/
