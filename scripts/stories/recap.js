@@ -268,6 +268,30 @@ const sentences = [{
     {
         html: '<p id="left-aligned">I don’t know anymore.</p>'
     },
+    {
+        html: '!!end'
+    },
+    {
+        html: '<p id="left-aligned">I try to speak my mind, but the words don\' come out right.</p>'
+    },
+    {
+        html: '<p id="left-aligned">My thought routines are losing cohesion.</p>'
+    },
+    {
+        html: '<p id="left-aligned">I don\'t... I can\'t remember my name.</p>'
+    },
+    {
+        html: ''
+    },
+    {
+        html: '<p id="left-aligned">\"I\'m...\"</p>'
+    },
+    {
+        html: '!!end'
+    },
+    {
+        html: '<p id="left-aligned">Mustering all my strength, I force out the words...</p>'
+    },
 ];
 
 export default sentences;

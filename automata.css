@@ -299,10 +299,6 @@ input:checked+.slider:before {
     clear: both;
 }
 
-.container {
-    margin-top: 3%;
-}
-
 #textBody {
     max-width: 100%;
     min-width: 60%;
@@ -311,10 +307,9 @@ input:checked+.slider:before {
     font-size: 2.5vh;
     color: #4b4947;
     font-stretch: expanded;
-    min-height: 100%;
-    padding-top: 2%;
+    min-height: 95%;
+    padding-top: 5%;
     padding-right: 20%;
-    padding-bottom: 20%;
     padding-left: 20%;
     user-select: none;
 }
@@ -353,6 +348,7 @@ input:checked+.slider:before {
     vertical-align: middle;
     position: relative;
     left: -0.5vh;
+    display: inline;
 }
 
 #textBody p {
