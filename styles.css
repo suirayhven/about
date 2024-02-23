@@ -1,15 +1,16 @@
 body {
-    background: linear-gradient(90deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.03) 33%, rgba(255,255,255,0) 33%),
-    linear-gradient(rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.03) 33%, rgba(255,255,255,0) 33%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 33%, rgba(255, 255, 255, 0) 33%),
+        linear-gradient(rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 33%, rgba(255, 255, 255, 0) 33%);
     background-size: 4px 4px;
     background-color: #cbc6b0;
     margin: 0px;
+    cursor: url("./resources/nier_cursor.png"), auto;
 }
 
 hr {
-    background-color:#3d3a35;
+    background-color: #3d3a35;
     border: 0;
-    height:3px;
+    height: 3px;
     margin: 0;
 }
 
@@ -18,7 +19,7 @@ a {
 }
 
 button span {
-    position:absolute;
+    position: absolute;
     padding: 0px 5px;
 }
 
@@ -27,6 +28,19 @@ button span {
     top: 0;
     min-height: 100px;
     width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 33%, rgba(255, 255, 255, 0) 33%),
+        linear-gradient(rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 33%, rgba(255, 255, 255, 0) 33%);
+    background-size: 4px 4px;
+    background-color: #cbc6b0;
+}
+
+#sticky-header .main-hr {
+    position: relative;
+    top: 100px;
+}
+#sticky-header .main-hr-decorations {
+    position: relative;
+    top: 100px;
 }
 
 #sticky-footer {
@@ -34,12 +48,18 @@ button span {
     bottom: 0;
     width: 100%;
     min-height: 5em;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 33%, rgba(255, 255, 255, 0) 33%),
+        linear-gradient(rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 33%, rgba(255, 255, 255, 0) 33%);
+    background-size: 4px 4px;
+    background-color: #cbc6b0;
 }
 
 #main-menu {
     position: absolute;
     bottom: 0%;
     margin-left: 5em;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-menu-button {
@@ -64,9 +84,9 @@ button span {
     cursor: pointer;
 }
 
-#main-menu a.active .main-menu-button{
+#main-menu a.active .main-menu-button {
     color: #cbc6b0;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     background-color: rgba(61, 58, 53, 0.75);
 }
 
@@ -115,26 +135,53 @@ button span {
 
 .main-hr-decorations {
     margin: 0% 5%;
-    content: "";
-    display: block;
-    height: 34px;
+    height: 21px;
     background-image: url('./resources/hr-decoration.svg');
     background-repeat: repeat-x;
-    background-position: center;
-    position: absolute;
-    left: 0;
-    width: 90%;
+    image-rendering: pixelated;
+    background-position: auto auto;
 }
 
 #page-title {
-    color:#3d3a35;
+    color: #3d3a35;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     font-weight: 200;
     text-transform: uppercase;
     text-shadow: 10px 10px 1px rgba(61, 58, 53, 0.5);
+    margin: 0.5em 2em;
 }
 
 .main-content {
-    padding: 2% 5%;
+    margin: 0% 6em;
+    display: flex;
+    align-items: flex-start;
+    border: #3d3a35;
+    border-style: none none none solid;
+    border-width: 4px;
+}
+
+#flex-box-1, #flex-box-2, #flex-box-3 {
+    flex: 1;
+    padding: 30px;
+}
+#flex-box-2 img{
+    width: 100%;
+    filter:  contrast(50%) saturate(0%) sepia(100%);
+}
+
+.main-content::before {
+    content: "";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: -24px;
+    min-width: 14px;
+    max-width: 14px;
+    background-color: #3d3a35;
+}
+
+
+.flex-box {
+    padding: 0px 20px
 }
