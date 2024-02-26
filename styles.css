@@ -64,9 +64,16 @@ button span {
 #main-menu {
     position: absolute;
     bottom: 0%;
-    margin-left: 5em;
+    left: 50%;
+    transform: translate(-50%, 0%);
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    width: 75%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
 }
 
 .main-menu-button {
@@ -138,7 +145,7 @@ button span {
 #page {
     width: 85%;
     margin: auto;
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .main-hr-decorations {
@@ -204,7 +211,7 @@ button span {
 
 .header-flex-box-child1 {
     margin: 0;
-    flex: 4;
+    flex: 3;
     justify-self: start;
 }
 
