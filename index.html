@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -96,58 +96,185 @@
     <div id="page">
 
         <h1 id="page-title">System</h1>
-        <div class="main-content">
+        <main class="main-content">
             <div id="flex-box-1">
                 <div class="flex-box-content">
-                    <h3>Welcome, <span style="font-weight: 500; color:rgb(61, 58, 53);">{$USER}</span> !</h3>
+                    <p><strong>Welcome, </strong><span style="font-weight: 500; color:rgb(61, 58, 53);">{$USER}</span>
+                        <strong>!</strong></p>
                     <hr class="inline-hr">
-                    <p id="user-warning">User authentification indeterminate. Contact your Operator unit or try again.</p>
+                    <p id="user-warning">User authentification indeterminate. Contact your Operator unit or try again.
+                    </p>
                 </div>
                 <span class="binary-accent">01000001 01010010 01001011 Main Server</span>
                 <div id="flex-box-4">
                     <div class="flex-box-content">
-                        <p>Lorem <span class="redacted">dhasfds</span> <span class="redacted">dhasfds</span> amet consectetur adipisicing elit. Cupiditate vel adipisci quidem? Harum
-                            praesentium, quaerat quos iusto vitae, <span class="redacted">dhasfds</span> consequuntur quo ea natus, doloribus tempora obcaecati.
+                        <p>Lorem <span class="redacted">dhasfds</span> <span class="redacted">dhasfds</span> amet
+                            consectetur adipisicing elit. Cupiditate vel adipisci quidem? Harum
+                            praesentium, quaerat quos iusto vitae, <span class="redacted">dhasfds</span> consequuntur
+                            quo ea natus, doloribus tempora obcaecati.
                             Similique ea accusamus cumque minus!</p>
                     </div>
-    
+
                 </div>
             </div>
             <div id="flex-box-2">
-                <h3>Test</h3>
-                    <img src="./resources/test-image.webp" alt="Test Image">
-                <div class="flex-box-content">
-                    <hr class="inline-hr">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores aspernatur, numquam sunt ea
-                        pariatur quisquam nostrum. Repellat quia impedit provident eius nisi atque nobis corrupti? Quis
-                        ad voluptas dolore ea.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel adipisci quidem? Harum
-                        praesentium, quaerat quos iusto vitae, consequuntur quo ea natus, doloribus tempora obcaecati.
-                        Similique ea accusamus cumque minus!</p>
-                        <hr class="inline-hr">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel adipisci quidem? Harum
-                        praesentium, quaerat quos iusto vitae, consequuntur quo ea natus, doloribus tempora obcaecati.
-                        Similique ea accusamus cumque minus!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel adipisci quidem? Harum
-                        praesentium, quaerat quos iusto vitae, consequuntur quo ea natus, doloribus tempora obcaecati.
-                        Similique ea accusamus cumque minus!</p>
+                <div class="header-flex-box">
+                    <div class="header-flex-box-child1">
+                        <h2>◼ Sui'ra Yhven and Pod 271</h2>
+                    </div>
+                    <div class="header-flex-box-child2">
+                    </div>
+                </div>
+                <img src="./resources/landing-page-img.png" alt="Test Image">
+                <div class="header-flex-box">
+                    <div class="header-flex-box-child1">
+                        <h3>⛶Unit status</h3>
+                    </div>
+                    <div class="header-flex-box-child2">
+                        <span style="color:rgb(104, 158, 52);">✔ Operational</span>
+                    </div>
+                </div>
+                <div class="flex-box-content app">
+                    <table class="main-table outer-table">
+                        <tbody>
+                        <tr>
+                            <th>Black Box</th>
+                            <td>
+                                <accordion title="Operational">
+                                    <table class="main-table inner-table">
+                                        <tr>
+                                            <th>◼ Signal</th>
+                                            <td><span>Online</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ Condition</th>
+                                            <td><span>Optimal</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr><th>◼ Self-Destruct</th>
+                                            <td class="dropdown"><span>On</span><div class="dropdown-content">
+                                                <p>Off</p>
+                                                </div></td>
+                                        </tr>
+                                        <!--<tr class="space-under"><td></td></tr>
+                                        <tr class="no-hover"><th colspan="2"><accordion title="◼ Test"><p>TESSSSSST</p></accordion></th>
+                                        </tr>-->
+                                    </table>
+                                </accordion>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Vitals</th>
+                            <td>
+                                <accordion title="Normal">
+                                    <table class="main-table inner-table">
+                                        <tr>
+                                            <th>◼ Heart Rate</th>
+                                            <td><span>55 BPM</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ Respiration Rate</th>
+                                            <td><span>14 BPM</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ SpO2</th>
+                                            <td><span>98%</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ CO2</th>
+                                            <td><span>56 mmHg</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ Blood Pressure</th>
+                                            <td><span>118 mmHg</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr><th>◼ Manual Override</th>
+                                            <td class="dropdown"><span>Off</span><div class="dropdown-content">
+                                                <p>On</p>
+                                                </div></td>
+                                        </tr>
+                                        <!--<tr class="space-under"><td></td></tr>
+                                        <tr class="no-hover"><th colspan="2"><accordion title="◼ Test"><p>TESSSSSST</p></accordion></th>
+                                        </tr>-->
+                                    </table>
+                                </accordion>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Pod</th>
+                            <td>
+                                <accordion title="Online">
+                                    <table class="main-table inner-table">
+                                        <tr>
+                                            <th>◼ Pod Number</th>
+                                            <td><span>271</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ Function</th>
+                                            <td><span>Tactical Support</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ Weapon</th>
+                                            <td><span>Gatling Gun</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr>
+                                            <th>◼ Program</th>
+                                            <td><span>A080: Wave</span></td>
+                                        </tr>
+                                        <tr class="space-under"><td></td></tr>
+                                        <tr class="no-hover"><th colspan="2"><accordion title="◼ Specifications">
+                                            <p>Height: 75cm</p>
+                                            <p>Weight: 43kg</p>
+                                        </accordion></th>
+                                        </tr>
+                                    </table>
+                        </tr>
+                        <tr>
+                            <th>Mission Status</th>
+                            <td>
+                                <accordion title="Underway">
+                                            <p>Sui'ra is currently deployed in <span class="redacted">---------------</span> and tasked with intelligence gathering.</p>
+                                        </accordion>
+                            </td>
+                                    </table>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <hr>
                 </div>
             </div>
             <div id="flex-box-3">
                 <div class="flex-box-content">
+                    <div class="header-flex-box">
+                        <div class="header-flex-box-child1">
+                            <h3>⛶General Information</h3>
+                        </div>
+                        <div class="header-flex-box-child2">
+                        </div>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel adipisci quidem? Harum
                         praesentium, quaerat quos iusto vitae, consequuntur quo ea natus, doloribus tempora obcaecati.
                         Similique ea accusamus cumque minus!</p>
                 </div>
 
             </div>
-        </div>
-        <div id="sticky-footer">
-            <hr class="main-hr">
-            <div class="main-hr-decorations"></div>
-        </div>
+        </main>
+    </div>
+    <div id="sticky-footer">
+        <hr class="main-hr">
+        <div class="main-hr-decorations"></div>
     </div>
 </body>
+<script src="https://unpkg.com/vue@2.2.1"></script>
 <script type="text/javascript" src="scripts.js"></script>
 
 </html>
