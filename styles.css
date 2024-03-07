@@ -73,7 +73,8 @@ button {
     float: right;
 }
 
-#main-content {
+.active {
+    color:#f52156
 }
 
 .flex-container {
@@ -252,7 +253,7 @@ box-shadow: 0px 0px 10px 3px rgba(71,220,173,0.02);
     user-select: none;
 }
 
-#sticky-nav-menu span:hover {
+#sticky-nav-menu span:not(.active):hover {
     color:#ffb022;
 }
 
@@ -285,4 +286,8 @@ box-shadow: 0px 0px 10px 3px rgba(71,220,173,0.02);
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
+}
+
+#hooks-description {
+    width: 100%;
 }
