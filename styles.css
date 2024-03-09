@@ -8,6 +8,10 @@ a {
     text-decoration: inherit; /* no underline */
   }
 
+p {
+    line-height: 200%;
+}
+
 p, table, ul {
     padding: 7px 50px;
 }
@@ -18,9 +22,13 @@ th {
     min-width: 130px;
 }
 
+td {
+    font-size: 10pt;
+}
+
 td > p {
     padding: 0px 0px 10px 5px;
-    
+    line-height: 175%;
 }
 
 body {
@@ -71,6 +79,11 @@ button {
     font-style: italic;
     margin: 0px 50px 30px 0px;
     float: right;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 10pt;
 }
 
 .active {
@@ -151,6 +164,7 @@ box-shadow: 0px 0px 10px 3px rgba(71,220,173,0.02);
 .flex-title p {
     text-transform: uppercase;
     padding: 0;
+    font-size: 14pt;
 }
 
 .flex-title {
