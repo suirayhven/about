@@ -30,11 +30,11 @@
         <!--Add logo when and if I want to ...-->
         <div id="website-logo"><i style="font-size:48px;"></i></div>
         <div id="sticky-nav-menu">
-            <span class="active">Home</span>
-            <span><a href="about.html">About</a></span>
-            <span><a href="lore.html">Lore</a></span>
-            <span><a href="photos.html">Photos</a></span>
-            <span><a href="ooc.html">OOC</a></span>
+            <span><a class="active" href="#home" onclick="toggleSection(1, this)">Home</a></span>
+            <span><a href="#about" onclick="toggleSection(2, this)">About</a></span>
+            <span><a href="#lore" onclick="toggleSection(3, this)">Lore</a></span>
+            <span><a href="#photos" onclick="toggleSection(4, this)">Photos</a></span>
+            <span><a href="#ooc" onclick="toggleSection(5, this)">OOC</a></span>
         </div>
         <div id="social-menu">
             <a href="https://discord.com/users/157857011000672257" title="Add me on Discord! @quidama"><svg
@@ -64,268 +64,369 @@
                 </svg></a>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="flex-container">
-            <div class="flex-hero">
-                <div id="hero-image" class="flex-shadow">
-                    <div class="flex-title" style="z-index: 10;">
-                        <div class="flex-accent-corner"></div>
-                        <p>Sui'ra</p>
+
+    <section id="home" class="home shown">
+        <div class="wrapper">
+            <div class="flex-container">
+                <div class="flex-hero">
+                    <div id="hero-image" class="flex-shadow">
+                        <div class="flex-title" style="z-index: 10;">
+                            <div class="flex-accent-corner"></div>
+                            <p>Sui'ra</p>
+                        </div>
+                        <div class="image-selector">
+                            <svg class="active" viewbox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="3" cx="50%" cy="50%" />
+                                Sorry, your browser does not support inline SVG.  
+                              </svg> 
+                              <svg viewbox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="3" cx="50%" cy="50%" />
+                                Sorry, your browser does not support inline SVG.  
+                              </svg>
+                        </div>
+                        <img class="selected" src="./resources/landing-portrait_2.webp"
+                        alt="Sui'ra holding his hand to his chest, reflecting">
+                    <img src="./resources/landing-portrait.webp"
+                        alt="Sui'ra holding his hand out and smiling">
+                                    
                     </div>
-                    <div class="image-selector">
-                        <svg class="active" viewbox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
-                            <circle r="3" cx="50%" cy="50%" />
-                            Sorry, your browser does not support inline SVG.  
-                          </svg> 
-                          <svg viewbox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
-                            <circle r="3" cx="50%" cy="50%" />
-                            Sorry, your browser does not support inline SVG.  
-                          </svg>
+                    <div id="flex-container-hero-right">
+                        <div id="hero-title-card" class="flex-blue flex-shadow">
+                            <div class="flex-title">
+                                <div class="flex-accent-corner"></div>
+                                <p>Welcome</p>
+                            </div>
+                            <div class="flex-main-content">
+                                <h1>Sui'ra Yhven<code>@Siren</code></h1>
+                                <p>~20 | Keeper of the Moon | he/him | ♂+♂ | Infiltrator</p>
+                                <p><strong>wu/t,</strong> Mare upon request</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div id="hero-description" class="flex-black flex-shadow">
+                            <div class="flex-title">
+                                <div class="flex-accent-red"></div>
+                                <div class="flex-accent-yellow"></div>
+                                <p>Brief</p>
+                            </div>
+                            <div class="flex-main-content">
+                                <p>
+                                    Sui’ra is a <em>feisty</em> and <em>captivating</em> catboy with a penchant for seizing
+                                    opportunities and achieving his desires, be it <em>uncovering secrets, gaining
+                                        favors,</em> or
+                                    <em>forging bonds.</em> His lively nature and inate charisma make him an
+                                    irresistible
+                                    presence in any situation.
+                                </p>
+                                <p>
+                                    During the day, he aids the Warrior of Darkness in their quest to save the world. Come
+                                    nightfall, he
+                                    mingles with all kinds of people in the Eorzean underground, unveiling secrets for the
+                                    Scions
+                                    and
+                                    himself.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <img class="selected" src="./resources/landing-portrait_2.webp"
-                    alt="Sui'ra holding his hand to his chest, reflecting">
-                <img src="./resources/landing-portrait.webp"
-                    alt="Sui'ra holding his hand out and smiling">
-                                
                 </div>
-                <div id="flex-container-hero-right">
-                    <div id="hero-title-card" class="flex-blue flex-shadow">
+                <div class="flex-main">
+                    <div class="flex-white main-description flex-shadow">
                         <div class="flex-title">
                             <div class="flex-accent-corner"></div>
-                            <p>Welcome</p>
+                            <p>Character</p>
                         </div>
                         <div class="flex-main-content">
-                            <h1>Sui'ra Yhven<code>@Siren</code></h1>
-                            <p>~20 | Keeper of the Moon | he/him | ♂+♂ | Infiltrator</p>
-                            <p><strong>wu/t,</strong> Mare upon request</p>
-                            <hr>
+                            <p>
+                                Much of Sui’ra’s <strong>background remains shrouded in mystery,</strong> with most of it
+                                either
+                                classified or
+                                unknown, even to himself. Some speculate that even he himself possesses little recollection
+                                of
+                                his
+                                own past, rendering him a blank slate of sorts.
+                                This enigmatic quality uniquely qualifies him for his role as an undercover agent, as
+                                <strong>he
+                                    harbors
+                                    nothing worth losing.</strong>
+                                Years of improvised lying and storytelling have made him <strong>remarkably skilled in the
+                                    art
+                                    of
+                                    deception,</strong>
+                                and he manages to elude even the keenest of minds and eyes.
+                            </p>
+    
+                            <p>
+                                Despite his professional excellence, Sui’ra’s personal life is plagued by shortcomings of
+                                another
+                                sort. His shrouded nature and deceptive tendencies have <strong>hindered his ability to form
+                                    meaningful or
+                                    intimate bonds.</strong>
+                                The absence of such connections leaves him <strong>vulnerable,</strong> as the longing for
+                                genuine
+                                companionship
+                                weighs heavily on him.
+                                When confronted with reminders of this unfulfilled aspect of his life, the psychological
+                                toll
+                                becomes overwhelming, eventually causing him to <strong>crack under pressure.</strong>
+                            </p>
                         </div>
                     </div>
-                    <div id="hero-description" class="flex-black flex-shadow">
+                    <div id="character-details" class="flex-black flex-shadow">
+                        <div class="flex-title">
+                            <div class="flex-accent-yellow"></div>
+                            <p>Specifications</p>
+                        </div>
+                        <div class="flex-main-content">
+                            <table>
+                                <tr>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <td>
+                                        <p>Sui'ra Yhven</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Age
+                                    </th>
+                                    <td>
+                                        <p>Unknown, around 20</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Gender
+                                    </th>
+                                    <td>
+                                        <p>Cis Male</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Place of Birth
+                                    </th>
+                                    <td>
+                                        <p>Unknown</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Occupation
+                                    </th>
+                                    <td>
+                                        <p>Scion [Officially], Spy [Internally]</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Appearance
+                                    </th>
+                                    <td>
+                                        <p>
+                                            Sui’ra stands at a diminutive height of 5’1”, a stark contrast to the majority
+                                            of his
+                                            Miqo’te brethren. His ash-blond hair is loosely styled into a messy left-parted
+                                            do, with
+                                            prominent bangs covering a portion of his visage. Despite his initially slim
+                                            appearance,
+                                            Sui’ra is fairly toned and can stand his ground in many a physical challenge.
+                                        </p>
+                                        <p>His profession requires him to stay presentable and Sui’ra laid to rest his
+                                            usual, more
+                                            traditional clothing style in favor of a more modern one. His style is inspired
+                                            in part
+                                            by
+                                            the bygone fashions of Garlemald as well as the, to Eorzean eyes, avant-garde
+                                            attire of
+                                            Solution Nine.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="character-preferences" class="flex-black flex-shadow">
+                        <div class="flex-title">
+                            <div class="flex-accent-yellow"></div>
+                            <p>Loves</p>
+                        </div>
+                        <div class="flex-main-content">
+                            <ul>
+                                <li>
+                                    The thrill of mano-a-mano combat
+                                </li>
+                                <li>
+                                    A good talk / mature conversations
+                                </li>
+                                <li>
+                                    When an unlikable film character redeems themselves
+                                </li>
+                                <li>
+                                    A chilled Wild Berry Spritz
+                                </li>
+                                <li>
+                                    Spicy food
+                                </li>
+                                <li>
+                                    A warm bath
+                                </li>
+                                <li>
+                                    <span style="color: #ffaaaa"><strong>Rose Pink</strong></span> and <span
+                                        style="color: #a60033"><strong>Dalamud Red</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
                         <div class="flex-title">
                             <div class="flex-accent-red"></div>
-                            <div class="flex-accent-yellow"></div>
-                            <p>Brief</p>
+                            <p>Dislikes</p>
+                        </div>
+                        <div class="flex-main-content">
+                            <ul>
+                                <li>
+                                    Revenge
+                                </li>
+                                <li>
+                                    Superficial people
+                                </li>
+                                <li>
+                                    Idleness
+                                </li>
+                                <li>
+                                    Attention and glory
+                                </li>
+                                <li>
+                                    Fish and sea food
+                                </li>
+                                <li>
+                                    Cold weather and rain
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block-image" class="flex-shadow">
+                        <img src="./resources/shadows.webp" alt="Sui'ra lurking in the shadows">
+                    </div>
+                    <div id="hooks-description" class="flex-white flex-shadow">
+                        <div class="flex-title">
+                            <div class="flex-accent-corner"></div>
+                            <p>Hooks</p>
                         </div>
                         <div class="flex-main-content">
                             <p>
-                                Sui’ra is a <em>feisty</em> and <em>captivating</em> catboy with a penchant for seizing
-                                opportunities and achieving his desires, be it <em>uncovering secrets, gaining
-                                    favors,</em> or
-                                <em>forging bonds.</em> His lively nature and inate charisma make him an
-                                irresistible
-                                presence in any situation.
-                            </p>
-                            <p>
-                                During the day, he aids the Warrior of Darkness in their quest to save the world. Come
-                                nightfall, he
-                                mingles with all kinds of people in the Eorzean underground, unveiling secrets for the
-                                Scions
-                                and
-                                himself.
+                                <strong>SoonTM</strong>
                             </p>
                         </div>
                     </div>
                 </div>
+    
             </div>
-            <div class="flex-main">
-                <div id="main-description" class="flex-white flex-shadow">
-                    <div class="flex-title">
-                        <div class="flex-accent-corner"></div>
-                        <p>Character</p>
-                    </div>
-                    <div class="flex-main-content">
-                        <p>
-                            Much of Sui’ra’s <strong>background remains shrouded in mystery,</strong> with most of it
-                            either
-                            classified or
-                            unknown, even to himself. Some speculate that even he himself possesses little recollection
-                            of
-                            his
-                            own past, rendering him a blank slate of sorts.
-                            This enigmatic quality uniquely qualifies him for his role as an undercover agent, as
-                            <strong>he
-                                harbors
-                                nothing worth losing.</strong>
-                            Years of improvised lying and storytelling have made him <strong>remarkably skilled in the
-                                art
-                                of
-                                deception,</strong>
-                            and he manages to elude even the keenest of minds and eyes.
-                        </p>
+        </div>
+        </section>
 
-                        <p>
-                            Despite his professional excellence, Sui’ra’s personal life is plagued by shortcomings of
-                            another
-                            sort. His shrouded nature and deceptive tendencies have <strong>hindered his ability to form
-                                meaningful or
-                                intimate bonds.</strong>
-                            The absence of such connections leaves him <strong>vulnerable,</strong> as the longing for
-                            genuine
-                            companionship
-                            weighs heavily on him.
-                            When confronted with reminders of this unfulfilled aspect of his life, the psychological
-                            toll
-                            becomes overwhelming, eventually causing him to <strong>crack under pressure.</strong>
-                        </p>
-                    </div>
-                </div>
-                <div id="character-details" class="flex-black flex-shadow">
-                    <div class="flex-title">
-                        <div class="flex-accent-yellow"></div>
-                        <p>Specifications</p>
-                    </div>
-                    <div class="flex-main-content">
-                        <table>
-                            <tr>
-                                <th>
-                                    Name
-                                </th>
-                                <td>
-                                    <p>Sui'ra Yhven</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Age
-                                </th>
-                                <td>
-                                    <p>Unknown, around 20</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Gender
-                                </th>
-                                <td>
-                                    <p>Cis Male</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Place of Birth
-                                </th>
-                                <td>
-                                    <p>Unknown</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Occupation
-                                </th>
-                                <td>
-                                    <p>Scion [Officially], Spy [Internally]</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Appearance
-                                </th>
-                                <td>
-                                    <p>
-                                        Sui’ra stands at a diminutive height of 5’1”, a stark contrast to the majority
-                                        of his
-                                        Miqo’te brethren. His ash-blond hair is loosely styled into a messy left-parted
-                                        do, with
-                                        prominent bangs covering a portion of his visage. Despite his initially slim
-                                        appearance,
-                                        Sui’ra is fairly toned and can stand his ground in many a physical challenge.
-                                    </p>
-                                    <p>His profession requires him to stay presentable and Sui’ra laid to rest his
-                                        usual, more
-                                        traditional clothing style in favor of a more modern one. His style is inspired
-                                        in part
-                                        by
-                                        the bygone fashions of Garlemald as well as the, to Eorzean eyes, avant-garde
-                                        attire of
-                                        Solution Nine.
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div id="character-preferences" class="flex-black flex-shadow">
-                    <div class="flex-title">
-                        <div class="flex-accent-yellow"></div>
-                        <p>Loves</p>
-                    </div>
-                    <div class="flex-main-content">
-                        <ul>
-                            <li>
-                                The thrill of mano-a-mano combat
-                            </li>
-                            <li>
-                                A good talk / mature conversations
-                            </li>
-                            <li>
-                                When an unlikable film character redeems themselves
-                            </li>
-                            <li>
-                                A chilled Wild Berry Spritz
-                            </li>
-                            <li>
-                                Spicy food
-                            </li>
-                            <li>
-                                A warm bath
-                            </li>
-                            <li>
-                                <span style="color: #ffaaaa"><strong>Rose Pink</strong></span> and <span
-                                    style="color: #a60033"><strong>Dalamud Red</strong></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="flex-title">
-                        <div class="flex-accent-red"></div>
-                        <p>Dislikes</p>
-                    </div>
-                    <div class="flex-main-content">
-                        <ul>
-                            <li>
-                                Revenge
-                            </li>
-                            <li>
-                                Superficial people
-                            </li>
-                            <li>
-                                Idleness
-                            </li>
-                            <li>
-                                Attention and glory
-                            </li>
-                            <li>
-                                Fish and sea food
-                            </li>
-                            <li>
-                                Cold weather and rain
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="block-image" class="flex-shadow">
-                    <img src="./resources/shadows.webp" alt="Sui'ra lurking in the shadows">
-                </div>
-                <div id="hooks-description" class="flex-white flex-shadow">
-                    <div class="flex-title">
-                        <div class="flex-accent-corner"></div>
-                        <p>Hooks</p>
-                    </div>
-                    <div class="flex-main-content">
-                        <p>
-                            <strong>SoonTM</strong>
-                        </p>
-                    </div>
+        <section id="about" class="about hidden">
+
+        </section>
+
+        <section id="lore" class="lore hidden">
+            <div class="flex-container">
+            
+                <div class="flex-main">
+                    <div id="lore-title-image" class="flex-shadow flex-white">
+                    <img src="./resources/story_1_image.webp" alt="Sui'ra in a white void"></div>
+                <div class="flex-main">
+                    <div class="main-description flex-white flex-shadow">
+                        <div class="flex-title">
+                            <div class="flex-accent-corner"></div>
+                            <p>Character</p>
+                        </div>
+                        <div class="flex-main-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime laborum, accusantium, quasi ea quaerat hic aperiam, cum illo dignissimos incidunt error tempore? Quas harum ex maiores doloribus fuga accusantium!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime laborum, accusantium, quasi ea quaerat hic aperiam, cum illo dignissimos incidunt error tempore? Quas harum ex maiores doloribus fuga accusantium!</p>
+                            <p><img src="./resources/landing-portrait.webp" style="width: 300px; height: 300px; float:left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime laborum, accusantium, quasi ea quaerat hic aperiam, cum illo dignissimos incidunt error tempore? Quas harum ex maiores doloribus fuga accusantium!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime laborum, accusantium, quasi ea quaerat hic aperiam, cum illo dignissimos incidunt error tempore? Quas harum ex maiores doloribus fuga accusantium!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime laborum, accusantium, quasi ea quaerat hic aperiam, cum illo dignissimos incidunt error tempore? Quas harum ex maiores doloribus fuga accusantium!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime laborum, accusantium, quasi ea quaerat hic aperiam, cum illo dignissimos incidunt error tempore? Quas harum ex maiores doloribus fuga accusantium!</p>
+                        
+                        </div>
                 </div>
             </div>
-
         </div>
     </div>
+        </section>
+
+        <section id="photos" class="photos hidden">
+            
+        </section>
+
+        <section id="ooc" class="ooc hidden">
+            <div class="flex-container">
+                <div class="flex-main">
+                    <div id="main-description" class="flex-white wide flex-shadow">
+                        <div class="flex-title">
+                            <div class="flex-accent-corner"></div>
+                            <p>Out of character</p>
+                        </div>
+                        <div class="flex-main-content">
+                            <p class="center">Professional catboy lover • 25 • he/they • I'm European so if you see me online my sleep cycle is probably f-ed.</p>
+                            <p class="center">I haven't really RPed since I started playing the game in 2020 so go easy on me. ❤</p>
+                            <p class="center">Feel free to send me a /tell out of character. I'm usually nice!</p>
+                            <hr>
+                            <p>Please check out my previous Carrds, they're kinda cute too:</p>
+                            <ul style="margin-left: 50px">
+                                <li>
+                                    <a style="text-decoration: underline; font-size: 12pt;" href="https://suira.carrd.co/">Second Carrd</a>
+                                </li>
+                                <li>
+                                    <a style="text-decoration: underline; font-size: 12pt;" href="https://oldsuira.carrd.co/#">First Carrd</a>
+                                </li>
+                            </ul>
+                            <p>Also, check out my boyfriend's Carrd, he's kinda cute too:</p>
+                            <ul style="margin-left: 50px">
+                                <li>
+                                    <a style="text-decoration: underline; font-size: 12pt;" href="https://dovha.carrd.co/">Dovh'a's Carrd</a>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>I learned HTML and CSS to make this website... Send me a DM on Discord or Twitter if you have feedback.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
     <div class="under-construction">
         <p>🚧 This website is under construction. I'll sporadically add more stuff so check back later.</p>
     </div>
     <script src="scripts/image-switcher.js"></script> 
+    <script>
+function toggleSection(index, link) {
+    event.preventDefault();
+    // Remove 'active' class from all links
+    const links = document.querySelectorAll('#sticky-nav-menu a');
+    links.forEach(a => a.classList.remove('active'));
+    
+    // Add 'active' class to the clicked link
+    link.classList.add('active');
+    
+    // Hide all sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.classList.remove('shown');
+        section.classList.add('hidden');
+    });
+    
+    // Show the corresponding section
+    const sectionToToggle = document.getElementById(link.getAttribute('href').substring(1));
+    sectionToToggle.classList.remove('hidden');
+    sectionToToggle.classList.add('shown');
+}
+
+    </script> 
     </body>
 
 </html>
